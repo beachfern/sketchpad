@@ -3,6 +3,12 @@ $(document).ready(function() {
     $('#canvas').append('<div class="row"><div>');
     $('.row').height(29.16666666666666667);
   };
+  $('button').on('mouseenter', function() {
+    $(this).addClass('highlight');
+  })
+  $('button').on('mouseleave', function() {
+    $(this).removeClass('highlight');
+  })
   $('button').on('click', function() {
     var gridSize = prompt("How many pixels should make up each side of the canvas? (1 to 100)","24");
     if (gridSize > 0 && gridSize <= 100) {
@@ -70,4 +76,5 @@ $(document).ready(function() {
       $(this).removeClass('highlight');
     })
   });
+
 });

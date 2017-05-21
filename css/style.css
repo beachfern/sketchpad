@@ -17,9 +17,11 @@ body {
   background-color: white;
 }
 button {
-  padding: 5px 10px;
+  padding: 5px;
   margin: 0 3px;
   color: #595959;
+  background-color: #F2F2F2;
+  border-radius: 10%;
 }
 .row {
   height: 10px;
@@ -42,7 +44,8 @@ button {
   margin-left: 30px;
 }
 .highlight {
-  color: black;
+  color: #F2F2F2;
+  background-color: #595959;
 }
 h1 {
   font-family: 'Indie Flower', cursive;
