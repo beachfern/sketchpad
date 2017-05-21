@@ -1,0 +1,52 @@
+body {
+  background-color: #F2F2F2;
+}
+
+.wrapper {
+  width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  color: #595959;
+  font-family: 'Ubuntu', sans-serif;
+}
+#canvas {
+  height: 700px;
+  width: 700px;
+  margin-top: 55px;
+  border: solid 1px #595959;
+  background-color: white;
+}
+button {
+  padding: 5px 10px;
+  margin: 0 3px;
+  color: #595959;
+}
+.row {
+  height: 10px;
+  width: 100%;
+  clear: both;
+}
+.column {
+  background-color: #F2F2F2;
+  display: inline-block;
+  float: left;
+  border-radius: 50%;
+}
+.main {
+  font-size: 1.1em;
+}
+#mainnav {
+  margin-bottom: 10px;
+}
+#clear {
+  margin-left: 30px;
+}
+.highlight {
+  color: black;
+}
+h1 {
+  font-family: 'Indie Flower', cursive;
+  font-size: 60px;
+  margin-bottom: 5px;
+  margin-top: 0;
+}
