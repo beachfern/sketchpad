@@ -30,6 +30,7 @@ $(document).ready(function() {
         $('#instructions').append('<button id ="eraser">Eraser</button>')
         $('#instructions').append('<button id ="squares">Squares</button>')
         $('#instructions').append('<button id ="circles">Circles</button>')
+        $('#instructions').append('<button id ="ginger">Ginger Mode</button>')
         $('#mainnav').append('<button id ="clear" class ="main">Clear</button>')
 
         };
@@ -50,6 +51,22 @@ $(document).ready(function() {
         $(this).css('background-color', getRandomColor());
       });
     });
+
+    /*Testing out ginger mode
+    colors to use
+    #C04C1A	#742C0E	#DB4C0F	#AF3C0B	#6D2405	#DF5E27	#F26F11
+    */
+    $('#ginger').on('click', function() {
+      function getGingerColor() {
+        var colors = ["#C04C1A", "#742C0E", "#DB4C0F", "#AF3C0B", "#6D2405", "#DF5E27", "#F26F11"];
+        var rand = colors[Math.floor(Math.random() * colors.length)];
+        return rand;
+      }
+      $('.column').on('mouseenter', function() {
+        $(this).css('background-color', getGingerColor());
+      });
+    });
+
     $('#black').on('click', function() {
       $('.column').on('mouseenter', function() {
         $(this).css('background-color', 'black');
